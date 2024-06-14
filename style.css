@@ -1,0 +1,316 @@
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Sidebar */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#sidebar .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar nav ul li {
+    margin: 10px 0;
+}
+
+#sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main wrapper */
+#wrapper {
+    margin-left: 250px;
+    background: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#wrapper .inner {
+    text-align: center;
+}
+
+/* Intro section */
+#intro {
+    min-height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#intro .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#intro .inner .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#intro .inner .content {
+    flex: 2;
+    text-align: left;
+    padding: 20px;
+}
+
+#intro .inner h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+#intro .inner h1 span {
+    display: inline-block;
+}
+
+#intro .inner h1 .first-name {
+    color: black;
+}
+
+#intro .inner h1 .last-name {
+    color: #3333cc; /* Choose a color that works well with light blue and white */
+}
+
+/* Experience section */
+#experience {
+    padding: 40px 0;
+    background: #f9f9f9;
+}
+
+#experience .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+#experience h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#experience .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+}
+
+#experience .job-details {
+    flex: 2;
+}
+
+#experience .job-details h3 {
+    margin: 0 0 10px;
+}
+
+#experience .job-details p {
+    margin: 5px 0;
+    padding: 10px;
+    background: #e9e9e9;
+    border-radius: 5px;
+}
+
+#experience .job-info {
+    flex: 1;
+    text-align: right;
+}
+
+#experience .job-info p {
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+/* General section styles */
+section {
+    margin-bottom: 40px;
+}
+
+/* Section headers */
+section h2 {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    #wrapper {
+        margin-left: 0;
+    }
+
+    #intro .inner {
+        flex-direction: column;
+    }
+
+    #experience .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #experience .job-details, #experience .job-info {
+        flex: none;
+        text-align: center;
+    }
+}
+
+/* Mes projets section */
+#projets .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2em; /* Add space between projects */
+    width: 100%;
+}
+
+.project-left, .project-right {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.project-left {
+    text-align: left;
+}
+
+.project-right {
+    text-align: left;
+}
+
+.project-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.skills img {
+    margin: 5px;
+    vertical-align: middle;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif; /* Example font, adjust as needed */
+    color: #333;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.wrapper.style2 {
+    background: #fff;
+    padding: 4em 2em;
+}
+
+.wrapper.style2 .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Mes Compétences section */
+#competences .inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-grid .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust as needed for spacing between rows */
+}
+
+.skills-grid img {
+    margin: 10px; /* Adjust as needed for spacing between icons */
+}
+/* Ma Formation section */
+#formation .inner {
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px; /* Adjust as needed for spacing between items */
+}
+
+.left-side {
+    flex: 1;
+    padding-right: 20px; /* Adjust as needed for spacing between left and right sides */
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-side img {
+    margin-top: 10px; /* Adjust as needed for spacing between period of study and logo */
+}
